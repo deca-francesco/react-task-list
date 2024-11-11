@@ -88,13 +88,13 @@ export default function AppMain() {
             <section className="current_tasks">
                 <h3>Current Tasks ({current_tasks.length}) </h3>
 
-                {current_tasks.map((task, id, priority, estimatedTime, state) => {
+                {current_tasks.map(({ ...task }) => {
                     return (
                         <div className="task">
-                            <span className="task_title" key={id}><strong>{task.title}</strong></span>
-                            <span className="task_state" key={state}>{task.state}</span>
-                            <div className="task_priority" key={priority}>Priority:{task.priority}</div>
-                            <div className="task_time" key={estimatedTime}>Est. time {task.estimatedTime}</div>
+                            <span className="task_title" key={task.id}><strong>{task.title}</strong></span>
+                            <span className="task_state" key={task.state}>{task.state}</span>
+                            <div className="task_priority" key={task.priority}>Priority:{task.priority}</div>
+                            <div className="task_time" key={task.estimatedTime}>Est. time {task.estimatedTime}</div>
                         </div>
                     )
                 })}
