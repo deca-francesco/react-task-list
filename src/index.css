@@ -1,0 +1,66 @@
+/* #region common */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+/* #endregion common */
+
+/* #region header */
+
+header {
+  background-color: aquamarine;
+  padding: 1rem;
+}
+
+/* #endregion header */
+
+/* #region main */
+
+main {
+
+  h2,
+  h3,
+  .task {
+    padding: 1rem;
+  }
+
+  .task {
+    .task_title {
+      display: inline-block;
+      padding-right: 1rem;
+      padding-bottom: 0.5rem;
+    }
+
+    .task_priority {
+      padding-bottom: 0.5rem;
+    }
+
+    .task_state {
+      padding: 0.5rem;
+      background-color: orangered;
+      color: white;
+    }
+  }
+}
+
+/* #endregion main */
+
+/* #region footer */
+
+footer {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+/* #endregion footer */
